@@ -823,14 +823,7 @@ export default function Home() {
 
   return (
     <div className='min-h-screen bg-white p-4 sm:p-8'>
-      <div className='fixed inset-x-0 top-0 bg-blue-50 border-b border-blue-100 p-4 flex flex-col sm:flex-row items-center justify-center gap-4 z-50'>
-        <p className='text-blue-800 text-center'>
-          <span className='font-semibold'>New:</span> Try our Visual Flow
-          feature for deep, recursive research
-        </p>
-       
-      </div>
-      <div className='pt-20'>
+      <div className='pt-4'>
         <KnowledgeBaseSidebar
           open={state.sidebarOpen}
           onOpenChange={(open) => updateState({ sidebarOpen: open })}
