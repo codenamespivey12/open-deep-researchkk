@@ -7,7 +7,7 @@ export async function POST(request: Request) {
     const { report, platformModel } = await request.json()
     const platform = platformModel.split('__')[0]
 
-    if (CONFIG.rateLimits.enabled && platform !== 'ollama') {
+    if (CONFIG.rateLimits.enabled) {
       const { success } = await reportContentRatelimit.limit(
         'agentOptimizations'
       )

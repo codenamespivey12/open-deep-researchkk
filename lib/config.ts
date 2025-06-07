@@ -27,22 +27,18 @@ export const CONFIG = {
       models: {
         'gemini-2.5-flash-preview-05-20': {
           enabled: true,
-          label: 'Gemini',
+          label: 'Gemini 2.5 Flash',
         },  
       },
     },
-    deepseek: {
+    openai: {
       enabled: true,
       models: {
-        chat: {
-          enabled: false,
-          label: 'Chat',
-        },
-        reasoner: {
+        'o3': {
           enabled: true,
-          label: 'Reasoner',
+          label: 'GPT-o3',
         },
       },
-    }
+    },
   },
 } as const

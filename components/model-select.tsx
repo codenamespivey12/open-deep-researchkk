@@ -10,7 +10,7 @@ import {
 import type { PlatformModel } from '@/types'
 import { CONFIG } from '@/lib/config'
 
-const DEFAULT_MODEL = 'deepseek__reasoner'
+const DEFAULT_MODEL = 'openai__o3'
 
 export const platformModels = Object.entries(CONFIG.platforms)
   .flatMap(([platform, config]) => {

@@ -88,7 +88,7 @@ export default function Home() {
     newUrl: '',
     isSourcesOpen: false,
     selectedModel: DEFAULT_MODEL,
-    isAgentMode: false,
+    isAgentMode: true,
     sidebarOpen: false,
     activeTab: 'search',
     status: {
@@ -858,20 +858,10 @@ export default function Home() {
               </div>
               <div className='flex justify-center items-center'>
                 <div className='flex items-center space-x-2'>
-                  <Checkbox
-                    id='agent-mode'
-                    checked={state.isAgentMode}
-                    className='w-4 h-4'
-                    onCheckedChange={(checked) =>
-                      updateState({ isAgentMode: checked as boolean })
-                    }
-                  />
-                  <label
-                    htmlFor='agent-mode'
-                    className='text-xs sm:text-sm font-medium leading-none text-muted-foreground peer-disabled:cursor-not-allowed peer-disabled:opacity-70'
-                  >
-                    Agent Mode (Automatic search and report generation)
-                  </label>
+                  <div className='flex items-center gap-2 text-xs sm:text-sm font-medium text-green-600'>
+                    <div className='w-2 h-2 bg-green-500 rounded-full'></div>
+                    Agent Mode Active (Automatic search and report generation)
+                  </div>
                 </div>
               </div>
             </div>

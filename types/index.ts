@@ -49,19 +49,8 @@ export type PlatformModel = {
 }
 
 export type ModelVariant =
-  | 'google__gemini-flash'
-  | 'google__gemini-flash-thinking'
-  | 'google__gemini-exp'
-  | 'gpt-4o'
-  | 'o1-mini'
-  | 'o1'
-  | 'claude-3-7-sonnet-latest'
-  | 'claude-3-5-haiku-latest'
-  | 'deepseek__chat'
-  | 'deepseek__reasoner'
-  | 'ollama__llama3.2'
-  | 'ollama__deepseek-r1:14b'
-  | 'openrouter__auto'
+  | 'google__gemini-2.5-flash-preview-05-20'
+  | 'openai__o3'
 
 export type Status = {
   loading: boolean
