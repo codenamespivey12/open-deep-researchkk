@@ -12,11 +12,7 @@ const generationJsonConfig = {
   responseMimeType: 'application/json',
 }
 
-const generationPlainTextConfig = {
-  temperature: 1,
-  maxOutputTokens: 100000,
-  responseMimeType: 'text/plain',
-}
+
 
 const safetySettings = [
   {
@@ -44,4 +40,15 @@ export const geminiFlashModel = genAI.getGenerativeModel({
   safetySettings,
   generationConfig: generationJsonConfig,
 })
-// Models removed
+
+export const geminiModel = genAI.getGenerativeModel({
+  model: 'gemini-1.5-pro',
+  safetySettings,
+  generationConfig: generationJsonConfig,
+})
+
+export const geminiFlashThinkingModel = genAI.getGenerativeModel({
+  model: 'gemini-2.0-flash-thinking-exp',
+  safetySettings,
+  generationConfig: generationJsonConfig,
+})

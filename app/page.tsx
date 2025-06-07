@@ -14,7 +14,6 @@ import {
   X,
   ChevronDown,
   Brain,
-  Code,
   Loader2,
 } from 'lucide-react'
 import {
