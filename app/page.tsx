@@ -829,14 +829,7 @@ export default function Home() {
           <span className='font-semibold'>New:</span> Try our Visual Flow
           feature for deep, recursive research
         </p>
-        <Button
-          asChild
-          variant='default'
-          size='sm'
-          className='whitespace-nowrap bg-blue-600 hover:bg-blue-700'
-        >
-          <a href='/flow'>Try Flow →</a>
-        </Button>
+       
       </div>
       <div className='pt-20'>
         <KnowledgeBaseSidebar
@@ -852,7 +845,7 @@ export default function Home() {
                 className='w-6 h-6 sm:w-8 sm:h-8 rounded-full'
               />
               <span className='text-xl sm:text-3xl font-bold font-heading'>
-                Open Deep Research
+                sixtyoneeighty Researcher
               </span>
             </h1>
             <div className='text-center space-y-3 mb-8'>
@@ -869,21 +862,7 @@ export default function Home() {
                   <Brain className='h-4 w-4' />
                   View Knowledge Base
                 </Button>
-                <Button
-                  asChild
-                  variant='outline'
-                  size='sm'
-                  className='inline-flex items-center gap-1 sm:gap-2 text-xs sm:text-sm rounded-full'
-                >
-                  <a
-                    href='https://github.com/btahir/open-deep-research'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <Code className='h-4 w-4' />
-                    View Code
-                  </a>
-                </Button>
+
               </div>
               <div className='flex justify-center items-center'>
                 <div className='flex items-center space-x-2'>
@@ -951,7 +930,7 @@ export default function Home() {
                         type='text'
                         value={state.query}
                         onChange={(e) => updateState({ query: e.target.value })}
-                        placeholder='Enter your search query...'
+                        placeholder='Enter your research topic...'
                         className='pr-8'
                       />
                       <Search className='absolute right-2 top-2 h-5 w-5 text-gray-400' />

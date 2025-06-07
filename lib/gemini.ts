@@ -8,13 +8,13 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '')
 
 const generationJsonConfig = {
   temperature: 1,
-  maxOutputTokens: 8192,
+  maxOutputTokens: 100000,
   responseMimeType: 'application/json',
 }
 
 const generationPlainTextConfig = {
   temperature: 1,
-  maxOutputTokens: 8192,
+  maxOutputTokens: 100000,
   responseMimeType: 'text/plain',
 }
 
@@ -37,26 +37,11 @@ const safetySettings = [
   },
 ]
 
-export const geminiFlashLiteModel = genAI.getGenerativeModel({
-  model: 'gemini-2.0-flash-lite-preview-02-05',
-  safetySettings,
-  generationConfig: generationJsonConfig,
-})
+// (removed)
 
 export const geminiFlashModel = genAI.getGenerativeModel({
-  model: 'gemini-2.0-flash',
+  model: 'gemini-2.5-flash-preview-05-20',
   safetySettings,
   generationConfig: generationJsonConfig,
 })
-
-export const geminiFlashThinkingModel = genAI.getGenerativeModel({
-  model: 'gemini-2.0-flash-thinking-exp-01-21',
-  safetySettings,
-  generationConfig: generationPlainTextConfig,
-})
-
-export const geminiModel = genAI.getGenerativeModel({
-  model: 'gemini-2.0-pro-exp-02-05',
-  safetySettings,
-  generationConfig: generationJsonConfig,
-})
+// Models removed
