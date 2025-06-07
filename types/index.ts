@@ -50,7 +50,7 @@ export type PlatformModel = {
 
 export type ModelVariant =
   | 'google__gemini-2.5-flash-preview-05-20'
-  | 'openai__o3'
+  | 'o3'
 
 export type Status = {
   loading: boolean
