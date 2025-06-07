@@ -36,7 +36,7 @@ export const CONFIG = {
       models: {
         'o3': {
           enabled: true,
-          label: 'GPT-o3',
+          label: 'o3',
         },
       },
     },
