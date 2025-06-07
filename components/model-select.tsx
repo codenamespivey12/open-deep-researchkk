@@ -44,6 +44,7 @@ export function ModelSelect({
     <Select
       value={value}
       onValueChange={onValueChange}
+      defaultValue={DEFAULT_MODEL}
       disabled={platformModels.length === 0}
     >
       <SelectTrigger className={triggerClassName}>
