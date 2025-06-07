@@ -43,10 +43,6 @@ export const CONFIG = {
           label: 'Reasoner',
         },
       },
-    },
-    ,
-        
-      }
-    },
+    }
   },
 } as const
