@@ -19,7 +19,7 @@ export const platformModels = Object.entries(CONFIG.platforms)
     return Object.entries(config.models).map(([modelId, modelConfig]) => {
       return {
         value: `${platform}__${modelId}`,
-        label: `${platform.charAt(0).toUpperCase() + platform.slice(1)} - ${
+        label: modelId === 'o3' ? 'o3' : `${platform.charAt(0).toUpperCase() + platform.slice(1)} - ${
           modelConfig.label
         }`,
         platform,
