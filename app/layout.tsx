@@ -19,9 +19,9 @@ const zenDots = Zen_Dots({
 })
 
 export const metadata: Metadata = {
-  title: 'Open Deep Research',
+  title: 'sixtyoneeighty Deep Researcher',
   description:
-    'Open source alternative to Deep Research. Generate reports with AI based on search results.',
+    'Everybody else has one, why not?.',
 }
 
 export default function RootLayout({
